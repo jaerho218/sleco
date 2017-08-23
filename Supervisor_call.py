@@ -14,7 +14,7 @@ GPIO.setup(17, GPIO.IN,pull_up_down=GPIO.PUD_UP)
 from email_handler import Class_eMail
 
 #set the email ID the address to send the email 
-To_Email_ID = "erichoekstra218@gmail.com"
+To_Email_ID = "slecoplasticsnotify@gmail.com"
 
 
 while True:
@@ -23,7 +23,7 @@ while True:
         print("Button press ")
         GPIO.output(18,GPIO.HIGH)
         email = Class_eMail()
-        email.send_Text_Mail(To_Email_ID, 'Machine 617', 'Supervisor to Machine 617')
+        email.send_Text_Mail(To_Email_ID, 'Machine 53', 'Supervisor to Machine 53')
         del email
     time.sleep(10)
     GPIO.output(18,GPIO.LOW)

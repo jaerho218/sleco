@@ -1,6 +1,6 @@
 ##--- Eric Hoekstra
 ##--- Date: 1st July 2017
-##--- Version: 1.01
+##--- Version: 1.21
 
 
 import RPi.GPIO as GPIO
@@ -20,12 +20,12 @@ To_Email_ID = "slecoplasticsnotify@gmail.com"
 while True:
     inputValue = GPIO.input(17)
     if (inputValue == False):
-        print("Button press ")
+#        print("Button press ")
         GPIO.output(18,GPIO.HIGH)
         email = Class_eMail()
         email.send_Text_Mail(To_Email_ID, 'Machine 53', 'Supervisor to Machine 53')
         del email
-    time.sleep(10)
+        time.sleep(10)
     GPIO.output(18,GPIO.LOW)
     
 

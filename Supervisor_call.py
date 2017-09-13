@@ -1,6 +1,6 @@
 ##--- Eric Hoekstra
-##--- Date: 1st July 2017
-##--- Version: 1.21
+##--- Date: 13th September 2017
+##--- Version: 1.25
 
 
 import RPi.GPIO as GPIO
@@ -19,6 +19,7 @@ To_Email_ID = "slecoplasticsnotify@gmail.com"
 
 while True:
     inputValue = GPIO.input(17)
+    time.import(.1)
     if (inputValue == False):
 #        print("Button press ")
         GPIO.output(18,GPIO.HIGH)

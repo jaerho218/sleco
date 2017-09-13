@@ -19,6 +19,7 @@ To_Email_ID = "slecoplasticsnotify@gmail.com"
 
 while True:
     inputValue = GPIO.input(19)
+    time.sleep(.1)
     if (inputValue == False):
 #        print("Button press ")
         GPIO.output(16,GPIO.HIGH)

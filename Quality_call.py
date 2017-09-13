@@ -1,6 +1,6 @@
 ##--- Eric Hoekstra
-##--- Date: 23rd Aug 2017
-##--- Version: 1.10
+##--- Date: 13th Sept 2017
+##--- Version: 1.25
 
 
 import RPi.GPIO as GPIO
